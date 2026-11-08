@@ -19,7 +19,7 @@ defineProps({
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background: #eddee9;
+  background: pink;
   font-family: Arial, sans-serif;
 }
 
