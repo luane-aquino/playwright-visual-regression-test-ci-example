@@ -11,8 +11,8 @@
     "test:ui": "playwright test --ui",
     "test:update": "playwright test --update-snapshots",
     "test:report": "playwright show-report",
-    "test:docker": "./docker-test.sh",
-    "test:docker:update": "./docker-test.sh --update-snapshots"
+    "test:docker": "docker compose run --rm playwright",
+    "test:docker:update": "docker compose run --rm playwright bash -c \"npm ci && npx playwright test --update-snapshots\""
   },
   "dependencies": {
     "vue": "^3.5.44"
