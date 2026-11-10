@@ -1,0 +1,9 @@
+services:
+  playwright:
+    image: mcr.microsoft.com/playwright:v1.65.0-noble
+    working_dir: /work
+    ipc: host
+    volumes:
+      - .:/work
+      - /work/node_modules
+    command: bash -c "npm ci && npx playwright test"

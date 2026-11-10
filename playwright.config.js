@@ -3,7 +3,7 @@ import { defineConfig, devices } from "@playwright/test";
 export default defineConfig({
   testDir: "./tests",
 
-  reporter: [["list"], ["html"]],
+  reporter: [["list"], ["html", { open: "never" }]],
 
   use: {
     baseURL: "http://localhost:5173",
